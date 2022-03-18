@@ -2,10 +2,15 @@
   "private": true,
   "name": "npm-package-sandbox",
   "version": "1.0.0",
-  "description": "",
+  "description": "package.json test.",
   "license": "UNLICENSED",
-  "author": "",
+  "author": "ofk <ofkjpn+github@gmail.com>",
+  "repository": "ofk/npm-package-sandbox",
   "main": "dist/npm-package-sandbox.js",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "microbundle --tsconfig tsconfig.build.json",
@@ -17,6 +22,7 @@
     "lint:scripts": "eslint --ext .js,.jsx,.ts,.tsx .",
     "lint:typecheck": "tsc",
     "prepare": "husky install",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier:format": "npm run prettier:lint -- --write",
     "prettier:lint": "prettier . --check"
