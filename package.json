@@ -5,10 +5,10 @@
   "description": "",
   "license": "UNLICENSED",
   "author": "",
-  "main": "index.js",
+  "main": "dist/npm-package-sandbox.js",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "microbundle --tsconfig tsconfig.build.json",
     "format": "npm-run-all -p format:** -s prettier:format",
     "format:package-json": "prettier-package-json --write",
     "format:scripts": "npm run lint:scripts -- --fix",
@@ -21,6 +21,7 @@
     "prettier:format": "npm run prettier:lint -- --write",
     "prettier:lint": "prettier . --check"
   },
+  "types": "dist/index.d.ts",
   "devDependencies": {
     "@ofk/eslint-config-recommend": "^5.2.0",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
@@ -36,6 +37,9 @@
     "typescript": "^4.6.2"
   },
   "keywords": [],
+  "browserslist": [
+    "since 2017-06"
+  ],
   "lint-staged": {
     "package.json": "prettier-package-json --write",
     "*.{md,json,html}": "prettier --write",
@@ -43,5 +47,6 @@
       "eslint --fix --ext .js,.jsx,.ts,.tsx",
       "prettier --write"
     ]
-  }
+  },
+  "source": "src/index.ts"
 }
