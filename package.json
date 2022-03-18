@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "npm-package-sandbox",
   "version": "1.0.0",
   "description": "package.json test.",
