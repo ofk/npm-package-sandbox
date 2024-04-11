@@ -1,10 +1,13 @@
 {
   "name": "npm-package-sandbox",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "license": "UNLICENSED",
   "author": "ofk <ofkjpn+github@gmail.com>",
-  "repository": "ofk/npm-package-sandbox",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofk/npm-package-sandbox.git"
+  },
   "type": "module",
   "main": "dist/npm-package-sandbox.cjs",
   "files": [
