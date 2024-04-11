@@ -4,7 +4,10 @@
   "description": "",
   "license": "UNLICENSED",
   "author": "ofk <ofkjpn+github@gmail.com>",
-  "repository": "ofk/npm-package-sandbox",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ofk/npm-package-sandbox.git"
+  },
   "type": "module",
   "main": "dist/npm-package-sandbox.cjs",
   "files": [
