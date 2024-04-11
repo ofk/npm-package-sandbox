@@ -1,10 +1,10 @@
 {
-  "private": true,
   "name": "npm-package-sandbox",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "description": "",
   "license": "UNLICENSED",
-  "author": "",
+  "author": "ofk <ofkjpn+github@gmail.com>",
+  "repository": "ofk/npm-package-sandbox",
   "type": "module",
   "main": "dist/npm-package-sandbox.cjs",
   "files": [
